@@ -125,8 +125,18 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
      </pluginRepository>
 -->
         <pluginRepository>
+        <id>jboss-earlyaccess-plugin-repository</id>
+        <url>https://maven.repository.redhat.com/earlyaccess/all</url>
+        <releases>
+          <enabled>true</enabled>
+        </releases>
+        <snapshots>
+          <enabled>true</enabled>
+        </snapshots>
+      </pluginRepository>        
+        <pluginRepository>
           <id>jboss-techpreview-plugin-repository</id>
-          <url>http://maven.repository.redhat.com/techpreview/all</url>
+          <url>https://maven.repository.redhat.com/techpreview/all</url>
           <releases>
             <enabled>true</enabled>
           </releases>
@@ -134,16 +144,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <enabled>true</enabled>
           </snapshots>
          </pluginRepository>
-        <pluginRepository>
-        <id>jboss-earlyaccess-plugin-repository</id>
-        <url>https://maven.repository.redhat.com/earlyaccess/all/</url>
-        <releases>
-          <enabled>true</enabled>
-        </releases>
-        <snapshots>
-          <enabled>true</enabled>
-        </snapshots>
-      </pluginRepository>
+
         <pluginRepository>
         <id>jboss-ga-plugin-repository</id>
         <url>http://maven.repository.redhat.com/ga/all</url>
