@@ -109,8 +109,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     </repositories>
 
-    <
-    Repositories>
+    <pluginRepositories>
 <!--
         <pluginRepository>
           <id>jboss-ea-plugin-repository</id>
@@ -137,7 +136,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
          </pluginRepository>
         <pluginRepository>
         <id>jboss-earlyaccess-plugin-repository</id>
-        <url>http://maven.repository.redhat.com/earlyaccess/all/</url>
+        <url>https://maven.repository.redhat.com/earlyaccess/all/</url>
         <releases>
           <enabled>true</enabled>
         </releases>
