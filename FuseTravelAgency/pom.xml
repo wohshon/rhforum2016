@@ -107,6 +107,16 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <enabled>true</enabled>
           </snapshots>
       </repository>
+      <repository>
+          <id>jboss-fs-repository</id>
+  	  <url>https://maven.repository.redhat.com/nexus/content/repositories/fs-releases/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+	</repository>
     </repositories>
 
     <pluginRepositories>
@@ -125,6 +135,17 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
      </pluginRepository>
 -->
         <pluginRepository>
+        <id>jboss-fs-release-plugin-repository</id>
+        <url>https://maven.repository.redhat.com/nexus/content/repositories/fs-releases/</url>
+        <releases>
+          <enabled>true</enabled>
+        </releases>
+        <snapshots>
+          <enabled>true</enabled>
+        </snapshots>
+      </pluginRepository>        
+       
+       <pluginRepository>
         <id>jboss-earlyaccess-plugin-repository</id>
         <url>https://maven.repository.redhat.com/earlyaccess/all</url>
         <releases>
@@ -205,8 +226,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <plugin>
                     <groupId>io.fabric8</groupId>
                     <artifactId>hawt-app-maven-plugin</artifactId>
-                    <!--version>2.2.0.redhat-079</version-->
-                       <version>2.2.170.redhat-000004</version>
+                    <version>2.2.0.redhat-079</version>
+                    <!--<version>2.2.170.redhat-000004</version>-->
                     <executions>
                         <execution>
                             <id>hawt-app</id>
