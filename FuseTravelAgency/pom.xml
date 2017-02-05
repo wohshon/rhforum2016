@@ -145,7 +145,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
            <name>FuseSource Release Repository</name>
            <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-fs-release/</url>
        </pluginRepository>
-
+<!--
        <pluginRepository>
            <id>release.fusesource.org</id>
            <name>FuseSource Release Repository</name>
@@ -157,6 +157,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                <enabled>true</enabled>
            </releases>
        </pluginRepository>
+-->
        <pluginRepository>
            <id>pl.ea.fusesource.org</id>
            <name>FuseSource Community Early Access Release Repository</name>
