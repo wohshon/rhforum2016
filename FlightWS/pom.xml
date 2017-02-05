@@ -356,7 +356,23 @@
                 <repository>
                     <id>redhat-techpreview-all-repository</id>
                     <!--url>http://maven.repository.redhat.com/techpreview/all/</url-->
-		    <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-ga</url>
+		    <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-techpreview</url>
+                </repository>
+                <repository>
+                    <id>redhat-ga-repository</id>
+                    <!--url>http://maven.repository.redhat.com/techpreview/all/</url-->
+                    <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-ga</url>
+                </repository>
+                <repository>
+                    <id>releases</id>
+                    <!--url>http://maven.repository.redhat.com/techpreview/all/</url-->
+                    <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/releases</url>
+                </repository>
+
+                <repository>
+                    <id>releases</id>
+                    <!--url>http://maven.repository.redhat.com/techpreview/all/</url-->
+                    <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/central</url>
                 </repository>
             </repositories>
         </profile>
