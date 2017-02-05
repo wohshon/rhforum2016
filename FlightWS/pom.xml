@@ -370,7 +370,7 @@
                 </repository>
 
                 <repository>
-                    <id>releases</id>
+                    <id>central</id>
                     <!--url>http://maven.repository.redhat.com/techpreview/all/</url-->
                     <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/central</url>
                 </repository>
