@@ -64,119 +64,111 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <version>${camel-version}</version>
         </dependency>
     </dependencies>
-    <repositories>
-      <repository>
-          <id>jboss-ga-repository</id>
-          <url>https://maven.repository.redhat.com/ga/all</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-      </repository>
-      <repository>
-          <id>jboss-fuse-repository</id>
-          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-      </repository>
-<repository>
-    <id>jboss-earlyaccess-repository</id>
-    <url>https://maven.repository.redhat.com/earlyaccess/all/</url>
-    <releases>
-      <enabled>true</enabled>
-    </releases>
-    <snapshots>
-      <enabled>true</enabled>
-    </snapshots>
-</repository>
+   <repositories>
+       <repository>
+           <releases>
+               <enabled>true</enabled>
+           </releases>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+           <id>releases</id>
+           <name>releases</name>
+           <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/releases/</url>
 
-        
-      <repository>
-          <id>jboss-techpreview-repository</id>
-          <url>https://maven.repository.redhat.com/techpreview/all</url>          
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-      </repository>
-      <repository>
-          <id>jboss-fs-repository</id>
-  	  <url>https://maven.repository.redhat.com/nexus/content/repositories/fs-releases/</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-	</repository>
-    </repositories>
-
-    <pluginRepositories>
-<!--
-        <pluginRepository>
-          <id>jboss-ea-plugin-repository</id>
-          <url>https://repository.jboss.org/nexus/content/groups/ea</url>
-          <id>jboss-fuse-plugin-repository</id>
-          <url>https://repo.fusesource.com/nexus/content/groups/public</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-      </snapshots>
-     </pluginRepository>
--->
-        <pluginRepository>
-        <id>jboss-fs-release-plugin-repository</id>
-        <url>https://maven.repository.redhat.com/nexus/content/repositories/fs-releases/</url>
-        <releases>
-          <enabled>true</enabled>
-        </releases>
-        <snapshots>
-          <enabled>true</enabled>
-        </snapshots>
-      </pluginRepository>        
-       
+       </repository>
+       <repository>
+           <releases>
+               <enabled>true</enabled>
+           </releases>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+           <id>release.fusesource.org</id>
+           <name>FuseSource Release Repository</name>
+           <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-fs-release/</url>
+       </repository>
+       <repository>
+           <releases>
+               <enabled>true</enabled>
+           </releases>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+           <id>ea.fusesource.org</id>
+           <name>FuseSource Community Early Access Release Repository</name>
+           <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-earlyaccess/</url>
+       </repository>
+       <repository>
+           <id>ga.fusesource.org</id>
+           <name>FuseSource Release Repository</name>
+           <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-ga/</url>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+           <releases>
+               <enabled>true</enabled>
+           </releases>
+       </repository>
+       <repository>
+           <id>central</id>
+           <name>Maven Central</name>
+           <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/central/</url>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+           <releases>
+               <enabled>true</enabled>
+           </releases>
+       </repository>
+	<repository>
+           <id>3rdparty</id>
+           <name>3rdparty</name>
+           <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/thirdparty/</url>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+           <releases>
+               <enabled>true</enabled>
+           </releases>
+       </repository>
+   </repositories>
+   <pluginRepositories>
        <pluginRepository>
-        <id>jboss-earlyaccess-plugin-repository</id>
-        <url>https://maven.repository.redhat.com/earlyaccess/all</url>
-        <releases>
-          <enabled>true</enabled>
-        </releases>
-        <snapshots>
-          <enabled>true</enabled>
-        </snapshots>
-      </pluginRepository>        
-        <pluginRepository>
-          <id>jboss-techpreview-plugin-repository</id>
-          <url>https://maven.repository.redhat.com/techpreview/all</url>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-         </pluginRepository>
+           <id>release.fusesource.org</id>
+           <name>FuseSource Release Repository</name>
+           <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-ga/</url>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+           <releases>
+               <enabled>true</enabled>
+           </releases>
+       </pluginRepository>
+       <pluginRepository>
+           <id>pl.ea.fusesource.org</id>
+           <name>FuseSource Community Early Access Release Repository</name>
+           <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-earlyaccess/</url>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+           <releases>
+               <enabled>true</enabled>
+           </releases>
+       </pluginRepository>
+       <pluginRepository>
+           <id>central</id>
+           <name>Maven Central</name>
+           <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/central/</url>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+           <releases>
+               <enabled>true</enabled>
+           </releases>
+       </pluginRepository>
+   </pluginRepositories>
 
-        <pluginRepository>
-        <id>jboss-ga-plugin-repository</id>
-        <url>https://maven.repository.redhat.com/ga/all</url>
-        <releases>
-          <enabled>true</enabled>
-        </releases>
-        <snapshots>
-          <enabled>true</enabled>
-        </snapshots>
-      </pluginRepository>        
-    </pluginRepositories>
 
         <build>
         <defaultGoal>install</defaultGoal>
