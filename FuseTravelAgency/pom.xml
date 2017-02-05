@@ -135,6 +135,18 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    </repositories>
    <pluginRepositories>
        <pluginRepository>
+           <releases>
+               <enabled>true</enabled>
+           </releases>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+           <id>release.fusesource.org</id>
+           <name>FuseSource Release Repository</name>
+           <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-fs-release/</url>
+       </pluginRepository>
+
+       <pluginRepository>
            <id>release.fusesource.org</id>
            <name>FuseSource Release Repository</name>
            <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-ga/</url>
