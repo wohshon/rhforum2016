@@ -355,7 +355,8 @@
             <repositories>
                 <repository>
                     <id>redhat-techpreview-all-repository</id>
-                    <url>http://maven.repository.redhat.com/techpreview/all/</url>
+                    <!--url>http://maven.repository.redhat.com/techpreview/all/</url-->
+		    <url>http://nexus-nexus.cloudapps.demo.com/nexus/content/repositories/redhat-ga</url>
                 </repository>
             </repositories>
         </profile>
