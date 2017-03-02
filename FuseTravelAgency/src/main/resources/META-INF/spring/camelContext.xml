@@ -17,8 +17,6 @@
         </rest>
         <route id="bookings">
             <from id="_from1" uri="direct:book"/>
-            <log message="**********************************************************"/>
-            <log message=" ${body}"/>               
             <unmarshal id="_unmarshal1">
                 <json library="Gson" prettyPrint="true" unmarshalTypeName="com.redhat.travelagency.model.BookingReq"/>
             </unmarshal>
