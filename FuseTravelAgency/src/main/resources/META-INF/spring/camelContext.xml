@@ -10,15 +10,15 @@
         <propertyPlaceholder id="urls" location="props.properties"/>
         <restConfiguration component="netty4-http" enableCORS="true"
             host="0.0.0.0" port="8182"/>
-        <rest consumes="application/json" path="/rest">
-            <log message="**********************************************************"/>
-            <log message=" ${body}"/>            
+        <rest consumes="application/json" path="/rest">         
             <post uri="/book">
                 <to uri="direct:book"/>
             </post>
         </rest>
         <route id="bookings">
             <from id="_from1" uri="direct:book"/>
+            <log message="**********************************************************"/>
+            <log message=" ${body}"/>               
             <unmarshal id="_unmarshal1">
                 <json library="Gson" prettyPrint="true" unmarshalTypeName="com.redhat.travelagency.model.BookingReq"/>
             </unmarshal>
