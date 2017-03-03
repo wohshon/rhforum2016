@@ -15,8 +15,19 @@
                 <to uri="direct:book"/>
             </post>
         </rest>
+      <route id="tap">
+        <from uri="direct:tap"/>
+        <!-- <log message="TAP : ${body}"/> -->
+            <setHeader headerName="Exchange.HTTP_METHOD" id="_setHeadertest">
+                <constant>POST</constant>
+            </setHeader> 
+<!--          <to id="test" uri="http4://192.168.223.130:8080/events?exchangePattern=InOut&amp;bridgeEndpoint=true"/> -->
+         <to id="test" uri="http4://192.168.223.130:8080/events?exchangePattern=InOut&amp;bridgeEndpoint=true"/>
+      </route>   
+
         <route id="bookings">
             <from id="_from1" uri="direct:book"/>
+            <wireTap uri="direct:tap"/> 
             <unmarshal id="_unmarshal1">
                 <json library="Gson" prettyPrint="true" unmarshalTypeName="com.redhat.travelagency.model.BookingReq"/>
             </unmarshal>
