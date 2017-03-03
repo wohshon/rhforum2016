@@ -20,7 +20,11 @@
         <!-- <log message="TAP : ${body}"/> -->
             <setHeader headerName="Exchange.HTTP_METHOD" id="_setHeadertest">
                 <constant>POST</constant>
-            </setHeader> 
+            </setHeader>
+                 <setBody>
+                     <simple>{ "event": "fuse" }</simple>
+                 </setBody>
+
 <!--          <to id="test" uri="http4://192.168.223.130:8080/events?exchangePattern=InOut&amp;bridgeEndpoint=true"/> -->
          <to id="test" uri="http4://{{DASHBOARDURL}}/events/fuse?exchangePattern=InOut&amp;bridgeEndpoint=true"/>
       </route>   
