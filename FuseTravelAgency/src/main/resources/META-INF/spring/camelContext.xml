@@ -22,7 +22,7 @@
                 <constant>POST</constant>
             </setHeader> 
 <!--          <to id="test" uri="http4://192.168.223.130:8080/events?exchangePattern=InOut&amp;bridgeEndpoint=true"/> -->
-         <to id="test" uri="http4://192.168.223.130:8080/events?exchangePattern=InOut&amp;bridgeEndpoint=true"/>
+         <to id="test" uri="http4://192.168.223.130:8080/events/fuse?exchangePattern=InOut&amp;bridgeEndpoint=true"/>
       </route>   
 
         <route id="bookings">
